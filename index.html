@@ -11,7 +11,32 @@
       aspect-ratio: 4 / 3; /* Atur rasio aspek (lebar / tinggi) */
       object-fit: cover;
     }
-
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+      gap: 20px; /* Jarak antar gambar */
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+  }
+  
+  .portfolio-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolio-content img {
+      width: 100%;
+      max-width: 300px; /* Ukuran maksimum */
+      height: auto;
+      border-radius: 5px;
+  }
+  
   </style>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -367,58 +392,31 @@
     </section><!-- /Resume Section -->
 
        <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
-
-      <div class="portfolio-wrapper">
-    <div class="portfolio-content">
-        <img src="assets/img/sertifikat BIMTAL.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/sertifikat BIMTAL.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
-                <i class="bi bi-zoom-in"></i>
-            </a>
+       <section id="portfolio" class="portfolio section light-background">
+  
+        <div class="container">
+          <h2>Portfolio</h2>
+          <p>Berikut adalah sertifikat yang telah saya peroleh.</p>
+      
+          <div class="portfolio-grid">
+            <div class="portfolio-content">
+              <img src="assets/img/sertifikat BIMTAL.jpg" class="img-fluid" alt="Sertifikat BIMTAL">
+            </div>
+            <div class="portfolio-content">
+              <img src="assets/img/sertifikat RDKI.jpg" class="img-fluid" alt="Sertifikat RDKI">
+            </div>
+            <div class="portfolio-content">
+              <img src="assets/img/Sertifikat2.jpg" class="img-fluid" alt="Sertifikat 2">
+            </div>
+            <div class="portfolio-content">
+              <img src="assets/img/Sertifikat 1.jpg" class="img-fluid" alt="Sertifikat 1">
+            </div>
+          </div>
+      
         </div>
-    </div>
-
-    <div class="portfolio-content">
-        <img src="assets/img/sertifikat RDKI.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/sertifikat RDKI.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
-                <i class="bi bi-zoom-in"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="portfolio-content">
-        <img src="assets/img/Sertifikat2.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/Sertifikat2.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
-                <i class="bi bi-zoom-in"></i>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-wrapper">
-    <div class="portfolio-content">
-        <img src="assets/img/Sertifikat 1.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/Sertifikat 1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
-                <i class="bi bi-zoom-in"></i>
-            </a>
-        </div>
-    </div>
-</div>
-
-
-    </section><!-- /Portfolio Section -->
+      
+      </section>
+      
 
     <!-- Services Section -->
     <!-- <section id="services" class="services section">
