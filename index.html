@@ -12,26 +12,6 @@
       object-fit: cover;
     }
 
-    .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 kolom */
-        grid-template-rows: repeat(2, auto); /* 2 baris */
-        gap: 20px; /* Jarak antar gambar */
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-
-      .portfolio-item {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border: 1px solid #ddd;
-          padding: 10px;
-          border-radius: 8px;
-          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-      }
-
   </style>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -386,37 +366,26 @@
 
     </section><!-- /Resume Section -->
 
-<section id="portfolio" class="portfolio section light-background">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Portfolio</h2>
-    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
-  </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title -->
 
-  <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-      
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <img src="assets/img/sertifikat BIMTAL.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="portfolio-item">
-          <img src="assets/img/sertifikat RDKI.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="portfolio-item">
-          <img src="assets/img/Sertifikat 1.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="portfolio-item">
-          <img src="assets/img/Sertifikat2.jpg" class="img-fluid" alt="">
-        </div>
-      </div>
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
 
-    </div>
-  </div>
-
-</section><!-- /Portfolio Section -->
-
+<div class="portfolio-wrapper">
+    <div class="portfolio-content">
+        <img src="assets/img/sertifikat BIMTAL.jpg" class="img-fluid" alt="">
+        <div class="portfolio-info">
+            <h4>App 1</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur</p>
+    </section><!-- /Portfolio Section -->
 
     <!-- Services Section -->
     <!-- <section id="services" class="services section">
